@@ -132,6 +132,6 @@ jobs:
             Added+Modified:
             ${{ steps.changed.outputs.added_modified }}
           # comma-separated string, send email to
-          to: ${{ secrets.EMAIL_LIST }},${{ secrets.EMAIL_TO }}
+          to: charles.f.dolan@nasa.gov
           # from email name
           from: HPDE Mailer
