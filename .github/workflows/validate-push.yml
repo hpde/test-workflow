@@ -4,13 +4,14 @@ name: SPASE Push Validation
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
-on: push
+on: 
+  workflow_call:
 #  push:
 #    branches: [ main ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  notify:
+  reusable_notify:
     name: Notify that a push has occurred
     runs-on: ubuntu-latest
     steps:
